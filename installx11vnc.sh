@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#   Author 
+#   Author: 
 #   Dansecret
 #
-echo "install VNC RSCUAD"
+echo "Install VNC RSCUAD"
 
 #UPDATE APT AND UPGRADE
 sudo apt update && sudo apt upgrade -y
@@ -20,7 +20,7 @@ sudo nano /lib/systemd/system/x11vnc.service
 
 #copy and paste
 
-
+/*
 #[Unit]
 #Description=x11vnc service
 #After=display-manager.service network.target syslog.target
@@ -33,7 +33,7 @@ sudo nano /lib/systemd/system/x11vnc.service
 
 #[Install]
 #WantedBy=multi-user.target
-
+*/
 #DELETE ALL "#"
 
 systemctl daemon-reload
